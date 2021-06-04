@@ -45,6 +45,7 @@
                 <version>3.0.0-M2</version>
                 <executions>
                     <execution>
+                        <phase>site</phase>
                         <goals>
                             <goal>integration-test</goal>
                             <goal>verify</goal>
