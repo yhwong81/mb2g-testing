@@ -16,6 +16,14 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.oracle.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>18.3.0.0</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <extensions>
             <extension>
@@ -28,12 +36,30 @@
 
     <distributionManagement>
         <repository>
-            <id>packagecloud.release</id>
-            <url>packagecloud+https://packagecloud.io/springframeworkguru/release</url>
+            <id>yhwong81.releases</id>
+            <url>packagecloud+https://packagecloud.io/yhwong81/release</url>
         </repository>
         <snapshotRepository>
-            <id>packagecloud.snapshot</id>
-            <url>packagecloud+https://packagecloud.io/springframeworkguru/snapshot</url>
+            <id>yhwong81.snapshots</id>
+            <url>packagecloud+https://packagecloud.io/yhwong81/snapshot</url>
         </snapshotRepository>
     </distributionManagement>
+
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>yhwong81.snapshots</id>-->
+<!--            <url>https://packagecloud.io/yhwong81/snapshot/maven2</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <id>yhwong81.releases</id>-->
+<!--            <url>https://packagecloud.io/yhwong81/release/maven2</url>-->
+<!--            <releases>-->
+<!--                <enabled>true</enabled>-->
+<!--            </releases>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+
 </project>
